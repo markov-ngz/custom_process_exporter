@@ -1,0 +1,8 @@
+fields: 
+  - net_connections
+  - create_time
+  - memory_percent
+  - name
+frequency: 60
+target:
+  url: http://127.0.0.1:5000

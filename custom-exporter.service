@@ -1,0 +1,20 @@
+[Unit]
+Description=Custom Exporter Daemon
+After=network-online.target
+ 
+[Service]
+Type=simple
+ 
+User=custom-exporter
+Group=custom-exporter
+UMask=007
+ 
+ExecStart=/usr/local/custom-exporter/dist/custom-exporter/custom-exporter -d
+ 
+Restart=no
+ 
+# Configures the time to wait before service is stopped forcefully.
+TimeoutStopSec=300
+ 
+[Install]
+WantedBy=multi-user.target
