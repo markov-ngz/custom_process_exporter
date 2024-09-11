@@ -1,6 +1,6 @@
 # custom-exporter
 Daemon to export processsus metrics to a target url.
-## What it does ?
+## What it does
 Sends specified processus informations to a target url at a specified frequency. <br><br>
 <b>Environment variables </b>: 
 - CUSTOM_EXPORTER_CONFIG : path to the yml configuration file, default : ```/etc/custom-exporter/config.yml```
